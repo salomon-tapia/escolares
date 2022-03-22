@@ -7,8 +7,8 @@ else
 
 
 
-	
-	$conn = new mysqli("localhost:3307", "root", "dasnivdra", "desercionpcausa");
+  $conn = new mysqli("localhost", "root", "1234", "desercionpcausa");	
+//	$conn = new mysqli("localhost:3307", "root", "dasnivdra", "desercionpcausa");
 	$conn->set_charset("utf8");
   /*
   $sqlp = "SELECT periodo FROM desercion WHERE periodo = '".$periodo."' AND carrera = '1'";
@@ -350,7 +350,7 @@ function toggleDataSeries(e) {
     
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
   <div class="container-fluid">
-    <!--a class="navbar-brand" href="#">Top navbar</a>
+  <!--  <a> class="navbar-brand" href="#">Top navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -392,12 +392,15 @@ function toggleDataSeries(e) {
         <option value="E21">Enero - Abril 2021</option>
         <option value="M21">Mayo - Agosto 2021</option>
         <option value="S21">Septiembre - Diciember 2021</option>
+		<option value="E22">Enero - Abril 2022</option>
       </select>
     </div>
     <input type="submit" name="iniciar" value="Mostrar gr&aacute;fica" class="btn btn-primary">    
 
 </form>
 <br>
+<!-- --aquí debe ir la gráfica -->
+
 <section>
 
 <?php

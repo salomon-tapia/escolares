@@ -1,5 +1,6 @@
 <?php
-  $conn = new mysqli("localhost:3307", "root", "dasnivdra", "desercionpcausa");
+  $conn = new mysqli("localhost", "root", "1234", "desercionpcausa");
+  //$conn = new mysqli("localhost:3307", "root", "dasnivdra", "desercionPcausa");
 	$conn->set_charset("utf8");
 ?>
 <!doctype html>
